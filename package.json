@@ -28,7 +28,7 @@
     "start": "webpack-dev-server",
     "prebuild": "rm -rf build",
     "build": "webpack -p",
-    "postbuild": "gulp images --compress"
+    "postbuild": "gulp images --compress && find ./source/ -iname '*.css' -exec cp {} ./build/ \\;"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
