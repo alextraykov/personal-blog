@@ -1,0 +1,119 @@
+/* Animation */
+
+@keyframes animateUp {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: translateY(40px) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/*  ==============================
+
+Content Items
+============================== */
+
+.gradient-adblue {
+    background: linear-gradient(45deg, #b0e1ff, #0d8eff, #0F5EC6, #051E53);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 5s ease infinite;
+    -moz-animation: gradient 5s ease infinite;
+    animation: gradient 5s ease infinite;
+}
+
+.showcaseHeaderCentercontainer h1 {
+    transition: all .3s linear;
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.showcaseHeaderCentercontainer.active h1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+div .image {
+    animation: scaleUp .5s ease forwards;
+}
+
+.sectionContent:nth-child(1) {
+    animation: animateUp .5s calc(1 * .2s + .3s) ease forwards;
+}
+
+.sectionContent:nth-child(2) {
+    animation: animateUp .5s calc(2 * .2s + .3s) ease forwards;
+}
+
+.sectionContent:nth-child(3) {
+    animation: animateUp .5s calc(3 * .2s + .3s) ease forwards;
+}
+
+.sectionContent:nth-child(4) {
+    animation: animateUp .5s calc(4 * .2s + .3s) ease forwards;
+}
+
+.sectionContent:nth-child(5) {
+    animation: animateUp .5s calc(5 * .2s + .3s) ease forwards;
+}
+
+.sectionContent:nth-child(6) {
+    animation: animateUp .5s calc(6 * .2s + .3s) ease forwards;
+}
+
+.sectionTitle__Header {
+    animation: animateUp .7s ease forwards;
+}
+
+.sectionTitle {
+    animation: animateUp .7s ease forwards;
+}
+
+.sectionTitle__About {
+    animation: animateUp .7s .3s ease forwards;
+}
+
+.sectionCopy__About {
+    animation: animateUp .7s .6s ease forwards;
+}
+
+.item__Work {
+    animation: animateUp .7s .9s ease forwards;
+}
+
+.item__SideProjects {
+    animation: animateUp .7s 1.2s ease forwards;
+}
+
+.item__Reading {
+    animation: animateUp .7s 1.5s ease forwards;
+}
+
+.item__Writing {
+    animation: animateUp .7s 1.8s ease forwards;
+}
