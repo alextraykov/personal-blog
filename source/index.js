@@ -4,30 +4,31 @@ import {
 } from 'gsap'
 
 const saySomething = () => {
-    console.log('IN');
-    const animationDelay = .5;
-    TweenMax.staggerFrom(".myClass", animationDelay, {
-        y: 40,
-        opacity: 0,
+    const tweenOptions = {
+        y: 0,
+        opacity: 1,
         delay: 0.3,
         ease: Power1.easeOut
-    }, 0.3);
+    }
+    const animationDelay = .35;
+    TweenMax.staggerTo(".myClass", animationDelay, tweenOptions, 0.3);
+
     setTimeout(() => {
-        TweenMax.staggerFrom(".myClass1", animationDelay, {
-            y: 40,
-            opacity: 0,
-            delay: 0.3,
-            ease: Power1.easeOut
-        }, 0.3);
+        TweenMax.staggerTo(".myClass1", animationDelay, tweenOptions, 0.3);
     }, animationDelay * 1000);
+
     setTimeout(() => {
-        TweenMax.staggerFrom(".myClass2", animationDelay, {
-            y: 40,
-            opacity: 0,
-            delay: 0.3,
-            ease: Power1.easeOut
-        }, 0.3);
+        TweenMax.staggerTo(".myClass2", animationDelay, tweenOptions, 0.3);
     }, animationDelay * 2000);
+
+    setTimeout(() => {
+        TweenMax.staggerTo(".myClass3", animationDelay, tweenOptions, 0.3);
+    }, animationDelay * 3000);
+
+    setTimeout(() => {
+        TweenMax.staggerTo(".myClass4", animationDelay, tweenOptions, 0.3);
+    }, animationDelay * 4000);
+
     inView('#section1').once('enter', el => {
         el.classList.add('active');
     });

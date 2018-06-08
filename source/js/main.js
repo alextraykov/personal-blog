@@ -63,7 +63,7 @@ const gradientInstance = new Granim({
 sectionItems.forEach((se, i) => {
   se.addEventListener('mouseover', (e) => {
     e.preventDefault();
-    gradientInstance.changeState(e.target.getAttribute('data-gradient'));
+    gradientInstance.changeState(e.target.getAttribute('data-gradient') || 'default-state');
   });
 
   se.addEventListener('mouseleave', (e) => {
