@@ -13,12 +13,12 @@ html {
 }
 
 body {
-    font-family: 'Haas';
+    font-family: 'Helvetica';
     overflow-x: hidden;
 }
 
 body::before {
-    font-family: 'Haas';
+    font-family: 'Helvetica';
     z-index: -1;
     transition: opacity .5s ease;
     opacity: 0;
