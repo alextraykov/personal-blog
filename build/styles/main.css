@@ -25,6 +25,7 @@ html {
   padding: 0 30px;
 }
 
+
 .wrapper.main {
   z-index: 1;
   position: relative;
@@ -173,4 +174,59 @@ List section
 
 .z-index-1 {
   z-index: 1;
+}
+
+/*  ==============================
+
+List section
+
+============================== */
+
+@media only screen and (max-width: 600px) { 
+  .about__titleName {
+    font-size: 3.5em;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+
+  .list {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .list__row { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .list__column {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) { 
+  .wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .list__column { 
+    padding: 0 5px;
+  }
 }

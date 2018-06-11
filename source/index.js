@@ -50,6 +50,9 @@ const saySomething = () => {
     inView('#section7').once('enter', el => {
         el.classList.add('active');
     });
+    inView('#section8').once('enter', el => {
+        el.classList.add('active');
+    });
     inView('#section9').once('enter', el => {
         el.classList.add('active');
     });
