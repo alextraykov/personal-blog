@@ -24,35 +24,6 @@ body::before {
     opacity: 0;
 }
 
-@font-face {
-    font-family: "haas";
-    src: url('haas-regular.ttf') format('truetype'), url('');
-}
-
-@font-face {
-    font-family: "haas";
-    font-weight: bold;
-    src: url('haas-bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "haas";
-    font-weight: 600;
-    src: url('haas-medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "haas";
-    font-weight: 400;
-    src: url('haas-regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "haas";
-    font-weight: 100;
-    src: url('haas-light.ttf') format('truetype');
-}
-
 /*  ==============================
 
 Font Sizes
