@@ -5,9 +5,6 @@
   .list__column {
     width: 100%;
   }
-  .list__column:not(:first-child) {
-    margin-top: 3rem;
-  }
   .about__title {
     font-size: 3rem;
   }
